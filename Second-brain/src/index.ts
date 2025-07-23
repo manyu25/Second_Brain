@@ -229,7 +229,7 @@ app.get("/api/v1/brain/:shareLink", async (req: Request, res: Response) => {
 
 mongoose
   .connect(
-    "mongodb+srv://abhimanyutripathi2504:Abhi%401234@cluster0.eihawxr.mongodb.net/Second-Brain"
+    MONGO_URI
   )
   .then(() => {
     console.log("Connected to MongoDB");
